@@ -7,7 +7,7 @@ import StoryViewer from './components/Status/StatusViewer';
 
 function App() {
   return (
-    <div className="">
+    <div >
 
       <Routes>
       <Route path="/" element={<HomePage/>}></Route>

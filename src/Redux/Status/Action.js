@@ -1,5 +1,5 @@
 import { BASE_URL } from "../../Config/Api";
-import { GET_STATUS_BY_ID } from "./ActionType";
+import { CREATE_STATUS, GET_STATUS_BY_ID } from "./ActionType";
 
 export const findStatusById = (data) => async (dispatch) => {
  
@@ -33,5 +33,5 @@ export const findStatusById = (data) => async (dispatch) => {
     );
     const status = await res.json();
   
-    dispatch({ type: GET_STATUS_BY_ID, payload: status });
+    dispatch({ type: CREATE_STATUS, payload: status });
   };
